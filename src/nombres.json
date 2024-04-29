@@ -1,0 +1,42 @@
+{
+  "OrcoHombre": [
+    "Grimgor", "Azhag", "Grommash", "Uzgash", "Morgoroth", "Thraknash", "Drogash", "Gorrok", "Skarshak",
+    "Zul'jin", "Throgg", "Urzog", "Morkhaz", "Gruluk", "Kargoth", "Gruul", "Narzug", "Thulrak", "Skabrat",
+    "Dregg", "Thokk", "Rukh", "Skarfang", "Grokk", "Nazgrub", "Grash", "Thulgar", "Urzoth", "Gorgon",
+    "Azhruk", "Morgok", "Thulk", "Zog", "Gorfang", "Skabnakk", "Urgnash", "Gornak", "Thrakgar", "Grimnash",
+    "Nagrash", "Urthak", "Gulruk", "Thulnash", "Skarr", "Morglum", "Grish", "Krug", "Durok", "Azhrog",
+    "Ugluk", "Draknar", "Grokkor", "Tharg", "Krogg", "Murglak", "Thruk", "Gorf", "Krusk", "Throzog", "Karg",
+    "Muzgash", "Ugresh", "Thulg", "Gromok", "Snag", "Durz", "Gulrok", "Kragg", "Brug", "Krul", "Grak",
+    "Muznash", "Thulnakk", "Grog"
+  ],
+  "OrcoMujer": [
+    "Morgana", "Uzgana", "Draga", "Azhaga", "Skara", "Grishna", "Ugluka", "Grokka", "Throka", "Urga",
+    "Snaga", "Thrashka", "Brugna", "Morgula", "Skraga", "Grumka", "Drogga", "Gazhna", "Gruka"
+  ],
+  "ElfoHombre" : [
+    "Aelarion", "Thalorien", "Finwe", "Aramil", "Thranduil", "Elrian", "Elanduil", "Celeborn", "Thranduil",
+    "Legolas", "Elrond", "Fingon", "Aragorn", "Beleg", "Beren", "Glorfindel", "Tinuviel", "Elladan",
+    "Elrohir", "Daeron", "Galdor", "Arathorn", "Celebrian", "Gil-galad", "Finarfin", "Círdan", "Finrod", "Aegnor", "Eöl"
+  ],
+  "ElfoMujer" : [
+    "Lirael", "Galadrial", "Elowen", "Caladwen", "Elara", "Arwen", "Elenwe", "Lorien", "Elara", "Tariel",
+    "Legolas", "Melian", "Finduilas", "Idril", "Nimrodel", "Lúthien", "Tauriel", "Galadriel", "Aelar",
+    "Nimrodel", "Lúthien", "Galathil", "Gilraen", "Mithrellas", "Arwen", "Celebrian", "Lúthien", "Melian",
+    "Nimrodel", "Tinuviel"
+  ],
+  "HumanoHombre" : [
+    "Aldric", "Cedric", "Gareth", "Aric", "Roland", "Alaric", "Darian", "Corwin", "Gideon", "Tavish",
+    "Roderick", "Alden", "Devlin", "Cedric", "Aldric", "Gareth", "Aric", "Roland", "Alaric", "Darian",
+    "Corwin", "Gideon", "Tavish", "Roderick", "Alden", "Devlin", "Cedric", "Aldric", "Gareth", "Aric",
+    "Roland", "Alaric", "Darian", "Corwin", "Gideon", "Tavish", "Roderick", "Alden", "Devlin"
+  ],
+  "HumanoMujer" : [
+    "Isolde", "Eowyn", "Lysandra", "Rowena", "Lyanna", "Elara", "Aveline", "Mira", "Leandra", "Sabine",
+    "Evelina", "Isolde", "Eowyn", "Lysandra", "Rowena", "Lyanna", "Elara", "Aveline", "Mira", "Leandra",
+    "Sabine", "Evelina", "Isolde", "Eowyn", "Lysandra", "Rowena", "Lyanna", "Elara", "Aveline", "Mira",
+    "Leandra", "Sabine", "Evelina"
+  ]
+
+}
+
+
