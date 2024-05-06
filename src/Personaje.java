@@ -1,27 +1,29 @@
 
 public abstract class Personaje implements AccionesPersonaje{
 
-    public Personaje(Razas raza, String nombre, String apodo, String fecha_de_nacimiento, int velocidad, int destreza, int fuerza, int nivel, int armadura) {
-        this.raza = raza;
+    public Personaje(String genero, String nombre, String apodo, String fechaDeNacimiento, int velocidad, int destreza, int fuerza, int nivel, int armadura) {
+        this.genero = genero;
         this.nombre = nombre;
         this.apodo = apodo;
-        setFecha_de_nacimiento(fecha_de_nacimiento);
+        setFechaDeNacimiento(fechaDeNacimiento);
         setSalud(100);
         this.velocidad = velocidad;
         this.destreza = destreza;
         this.fuerza = fuerza;
         setNivel(nivel);
         this.armadura = armadura;
+        this.salud = 100;
     }
 
 
     protected Razas raza;
+    protected String genero;
     protected String nombre = "";
-    private String apodo = "";
-    private String fecha_de_nacimiento = "";
+    protected String apodo = "";
+    protected String fechaDeNacimiento = "";
 
     protected int edad = 0;
-    protected int salud = 0;
+    protected int salud = 100;
     protected int velocidad = 0;
     protected int destreza = 0;
     protected int fuerza = 0;
@@ -29,10 +31,7 @@ public abstract class Personaje implements AccionesPersonaje{
     protected int armadura = 0;
 
     protected void Morir() {
-        System.out.println("El " + raza);
-        setSalud(0);
-        setNivel(0);
-
+        System.out.println(this.nombre + " ha muerto.");
     }
 
 
@@ -46,16 +45,20 @@ public abstract class Personaje implements AccionesPersonaje{
     public void setApodo(String apodo) {
         this.apodo = apodo;
     }
-    public void setFecha_de_nacimiento(String fecha_de_nacimiento) {
-        this.fecha_de_nacimiento = fecha_de_nacimiento;
+    public void setFechaDeNacimiento(String fechaDeNacimiento) {
+        this.fechaDeNacimiento = fechaDeNacimiento;
         //validar despues.
     }
-    public void setSalud(int salud) {
-        if (salud > -1 && salud < 101 ) {
-            this.salud = salud;
+    public void setSalud(int salud_p) {
+        if (salud_p > -1 && salud_p < 101 ) {
+            this.salud = salud_p;
         } else {
-            System.out.println("La salud asignada no se puede asignar");
+            System.out.println("La salud asignada no es valida: " + salud_p);
         }
+    }
+    public void setGenero(String genero) {
+        //despues hacer un enum,
+        this.genero = genero;
     }
     public void setVelocidad(int velocidad) {
         this.velocidad = velocidad;
@@ -94,8 +97,8 @@ public abstract class Personaje implements AccionesPersonaje{
     public String getApodo() {
         return apodo;
     }
-    public String getFecha_de_nacimiento() {
-        return fecha_de_nacimiento;
+    public String getFechaDeNacimiento() {
+        return fechaDeNacimiento;
     }
     public int getSalud() {
         return salud;
@@ -117,5 +120,18 @@ public abstract class Personaje implements AccionesPersonaje{
     }
     public int getEdad() {
         return edad;
+    }
+    public String getGenero() {
+        return genero;
+    }
+    @Override
+    public String toString() {
+        return "Raza: " + this.raza +"\n" +
+               "Nombre: " + this.nombre + " " + this.apodo + "\n" +
+               "Cumpleaños: " + this.fechaDeNacimiento + "\n"  +
+               "Estadisticas: " + this.armadura +"Arm. / "
+                + this.destreza + " Dest. / " + this.fuerza + "Fue. / " +
+                this.velocidad + " Vel. / " + this.nivel + "Nv. \n";
+
     }
 }

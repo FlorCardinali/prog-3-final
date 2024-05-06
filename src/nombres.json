@@ -35,8 +35,17 @@
     "Evelina", "Isolde", "Eowyn", "Lysandra", "Rowena", "Lyanna", "Elara", "Aveline", "Mira", "Leandra",
     "Sabine", "Evelina", "Isolde", "Eowyn", "Lysandra", "Rowena", "Lyanna", "Elara", "Aveline", "Mira",
     "Leandra", "Sabine", "Evelina"
-  ]
-
+  ],
+  "ApodosHombre" : ["el increíble", "el loco", "el destructor", "el sabio",
+    "el valiente", "el oscuro", "el poderoso", "el temido", "el astuto",
+    "el misterioso", "el implacable", "el invencible", "el feroz",
+    "el despiadado", "el legendario", "el enigmático", "el colosal", "el voraz",
+    "el sanguinario", "el indomable"],
+  "ApodosMujer": ["la increíble", "la loca", "la destructora", "la sabia", "la valiente",
+    "la oscura", "la poderosa", "la temida",
+    "la astuta", "la misteriosa", "la implacable", "la invencible",
+    "la feroz", "la despiadada", "la legendaria", "la enigmática",
+    "la colosal", "la voraz", "la sanguinaria", "la indomable"]
 }
 
 
