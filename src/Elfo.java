@@ -9,7 +9,7 @@ public class Elfo extends Personaje{
     @Override
     public int Atacar(int defensa) {
         Random random = new Random();
-        double PO = this.destreza * this.fuerza * this.nivel;
+        double PO = this.destresa * this.fuerza * this.nivel;
         double ED = (double) random.nextInt(101) /100;
         double VA = PO * ED;
         int danio = (int) Math.max(Math.ceil((((((VA * ED) - defensa) /500)*100)*1.05)),0) ;

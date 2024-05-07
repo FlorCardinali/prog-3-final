@@ -1,14 +1,14 @@
 
 public abstract class Personaje implements AccionesPersonaje{
 
-    public Personaje(String genero, String nombre, String apodo, String fechaDeNacimiento, int velocidad, int destreza, int fuerza, int nivel, int armadura) {
+    public Personaje(String genero, String nombre, String apodo, String fechaDeNacimiento, int velocidad, int destresa, int fuerza, int nivel, int armadura) {
         this.genero = genero;
         this.nombre = nombre;
         this.apodo = apodo;
         setFechaDeNacimiento(fechaDeNacimiento);
         setSalud(100);
         this.velocidad = velocidad;
-        this.destreza = destreza;
+        this.destresa = destresa;
         this.fuerza = fuerza;
         setNivel(nivel);
         this.armadura = armadura;
@@ -23,9 +23,9 @@ public abstract class Personaje implements AccionesPersonaje{
     protected String fechaDeNacimiento = "";
 
     protected int edad = 0;
-    protected int salud = 100;
+    protected int salud = 0;
     protected int velocidad = 0;
-    protected int destreza = 0;
+    protected int destresa = 0;
     protected int fuerza = 0;
     protected int nivel = 0;
     protected int armadura = 0;
@@ -36,40 +36,40 @@ public abstract class Personaje implements AccionesPersonaje{
 
 
     //setters
-    public void setRaza(Razas raza) {
+    protected void setRaza(Razas raza) {
         this.raza = raza;
     }
-    public void setNombre(String nombre) {
+    protected void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public void setApodo(String apodo) {
+    protected void setApodo(String apodo) {
         this.apodo = apodo;
     }
-    public void setFechaDeNacimiento(String fechaDeNacimiento) {
+    protected void setFechaDeNacimiento(String fechaDeNacimiento) {
         this.fechaDeNacimiento = fechaDeNacimiento;
         //validar despues.
     }
-    public void setSalud(int salud_p) {
+    protected void setSalud(int salud_p) {
         if (salud_p > -1 && salud_p < 201 ) {
             this.salud = salud_p;
         } else {
             System.out.println("La salud asignada no es valida: " + salud_p);
         }
     }
-    public void setGenero(String genero) {
+    protected void setGenero(String genero) {
         //despues hacer un enum,
         this.genero = genero;
     }
-    public void setVelocidad(int velocidad) {
+    protected void setVelocidad(int velocidad) {
         this.velocidad = velocidad;
     }
-    public void setDestreza(int destreza) {
-        this.destreza = destreza;
+    protected void setDestresa(int destresa) {
+        this.destresa = destresa;
     }
-    public void setFuerza(int fuerza) {
+    protected void setFuerza(int fuerza) {
         this.fuerza = fuerza;
     }
-    public void setNivel(int nivel) {
+    protected void setNivel(int nivel) {
         if (nivel>0) {
             this.nivel = nivel;
         } else {
@@ -78,12 +78,16 @@ public abstract class Personaje implements AccionesPersonaje{
         }
 
     }
-    public void setArmadura(int armadura) {
+    protected void setArmadura(int armadura) {
         this.armadura = armadura;
     }
-    public void setEdad(int edad) {
+    protected void setEdad(int edad) {
         this.edad = edad;
     }
+
+
+
+
     //getters
     public int getPoderDeDefensa() {
         return  this.armadura * this.velocidad;
@@ -106,8 +110,8 @@ public abstract class Personaje implements AccionesPersonaje{
     public int getVelocidad() {
         return velocidad;
     }
-    public int getDestreza() {
-        return destreza;
+    public int getDestresa() {
+        return destresa;
     }
     public int getFuerza() {
         return fuerza;
@@ -130,7 +134,7 @@ public abstract class Personaje implements AccionesPersonaje{
                "Nombre: " + this.nombre + " " + this.apodo + "\n" +
                "Cumpleaños: " + this.fechaDeNacimiento + "\n"  +
                "Estadisticas: " + this.armadura +"Arm. / "
-                + this.destreza + " Dest. / " + this.fuerza + "Fue. / " +
+                + this.destresa + " Dest. / " + this.fuerza + "Fue. / " +
                 this.velocidad + " Vel. / " + this.nivel + "Nv. \n";
 
     }
