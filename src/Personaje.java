@@ -12,7 +12,7 @@ public abstract class Personaje implements AccionesPersonaje{
         this.fuerza = fuerza;
         setNivel(nivel);
         this.armadura = armadura;
-        this.salud = 100;
+        this.salud = 200;
     }
 
 
@@ -50,7 +50,7 @@ public abstract class Personaje implements AccionesPersonaje{
         //validar despues.
     }
     public void setSalud(int salud_p) {
-        if (salud_p > -1 && salud_p < 101 ) {
+        if (salud_p > -1 && salud_p < 201 ) {
             this.salud = salud_p;
         } else {
             System.out.println("La salud asignada no es valida: " + salud_p);

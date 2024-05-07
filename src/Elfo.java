@@ -9,20 +9,18 @@ public class Elfo extends Personaje{
     @Override
     public int Atacar(int defensa) {
         Random random = new Random();
-        double poder = this.destreza * this.fuerza * this.nivel;
-
-        //para efectividad
-        double min = 0.0;
-        double max = 1.1;
-        int precision = 100;
-        double efectividad = min + random.nextDouble() * (max - min);
-        efectividad = Math.round(efectividad * precision) / (double) precision;
-
-        double valorDeAtaque = poder * efectividad;
-        int danio = (int) Math.max(Math.ceil((((((valorDeAtaque * efectividad) - defensa) /500)*100)*1.05)),0) ;
+        double PO = this.destreza * this.fuerza * this.nivel;
+        double ED = (double) random.nextInt(101) /100;
+        double VA = PO * ED;
+        int danio = (int) Math.max(Math.ceil((((((VA * ED) - defensa) /500)*100)*1.05)),0) ;
         System.out.println(this.nombre + " " + this.apodo +
-                " ataco con una efectividad del " + efectividad*100 +
-                "%, provocando "+ danio + " puntos de daño." );
+                " ataco con una efectividad del " + ED*100 +
+                "%");
+        if (danio==0){
+            System.out.println("Pero el oponente se defendio del daño.");
+        } else {
+            System.out.println("y provoco " + danio + " puntos de daño.");
+        }
         return danio;
     }
 
